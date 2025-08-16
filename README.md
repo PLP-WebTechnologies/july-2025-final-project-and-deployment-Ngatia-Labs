@@ -1,90 +1,54 @@
-# 📦 Final Assignment: Build, Organize, and Deploy a Multipage Website
+# BlueGold — Multipage Website (Final Project Starter)
 
-You're now ready to bring everything together—HTML, CSS, JavaScript, planning, structure, and deployment. This final project challenges you to **conceptualize, build, and deploy a multi-page website** that is responsive, interactive, and ready for the real world.
+**Color spec (requested):**
+- Primary button: **Blue** (`#1e40af`), hover changes to **Yellow/Gold** (`#facc15`).
+- Rest of palette chosen for high contrast, modern look, and accessibility.
 
-This assignment will guide you from planning your site all the way to deploying it online. Let’s make your project *production-worthy*! 🚀
+## Pages
+- `index.html` — Home (hero, features, CTA)
+- `about.html` — About (goals & approach)
+- `services.html` — Services (cards + CTA)
+- `gallery.html` — Gallery (grid + lightbox)
+- `contact.html` — Contact (validated form)
 
----
+## Tech
+- HTML5 semantic structure
+- CSS (custom properties, responsive grid, animations)
+- Vanilla JS (nav toggle, scroll reveal, form validation, lightbox, back-to-top)
 
-## 🌐🎯 Part 1: Planning and Organizing a Multipage Website
+## File Structure
+```
+/css/style.css
+/js/main.js
+/images/*.svg
+index.html, about.html, services.html, gallery.html, contact.html
+```
 
-Before you write any code, take time to plan:
+## How to Run Locally
+Just open `index.html` in your browser. For best results, serve via a simple HTTP server:
+- Python 3: `python -m http.server 8080` then open http://localhost:8080
 
-* Define your website's purpose (portfolio, product showcase, blog, etc.)
-* Outline 3–5 pages (e.g., Home, About, Services, Contact, Gallery)
-* Sketch or describe the layout of each page
-* Map out internal navigation (how pages link to one another)
+## Deploy Options
+### 1) GitHub Pages
+- Create a public repo, push the files.
+- In **Settings → Pages**, set Source to `main` branch `/root`.
+- Your site appears at `https://<username>.github.io/<repo>/`.
 
-**Goal:** Show intentional structure and user journey across the site.
+### 2) Netlify
+- Drag-and-drop the project folder into Netlify or connect your Git repo.
+- Build command: none (static). Publish directory: `/`.
 
----
+### 3) Vercel
+- Import your Git repo on Vercel.
+- Framework preset: `Other`. Output directory: `/`.
 
-## 🌍💻 Part 2: Build the Website Using HTML5, CSS, and JavaScript
+## Accessibility & Validation
+- Uses semantic tags and aria attributes.
+- Validate files on:
+  - HTML: https://validator.w3.org/
+  - CSS: https://jigsaw.w3.org/css-validator/
 
-Using your plan, begin building:
-
-* Use HTML5 for semantic structure
-* Apply CSS for responsive layout, styling, and animations
-* Use JavaScript to add interactivity (menus, forms, toggles, dynamic content)
-
-Each page should:
-
-* Be mobile-responsive
-* Share a consistent layout/header/footer
-* Include at least one interactive element (e.g., form validation, toggle menu, animation on scroll)
-
-**Goal:** Integrate everything you’ve learned in a cohesive, functioning project.
-
----
-
-## 🛠️🚀 Part 3: Best Practices for Code Organization
-
-Before deployment, refactor your project to follow production-friendly practices:
-
-* Organize files in folders (`/css`, `/js`, `/images`, etc.)
-* Write clean, modular, and commented code
-* Use meaningful file names and relative paths
-* Validate your HTML/CSS and test on different screen sizes
-
-**Goal:** Prepare your codebase to be readable, maintainable, and scalable.
-
----
-
-## 🌐🚀 Part 4: Introduction to Hosting and Deployment
-
-Once your project is complete, choose a method to **host your site online**.
-
-You can use:
-
-* **GitHub Pages** (great for portfolios and static sites)
-* **Netlify** (powerful CI/CD features and easy form support)
-* **Vercel** (lightning-fast deployment for frontend projects)
-
-Deploy your project and confirm that:
-
-* All links and scripts work
-* It loads properly on mobile and desktop
-* It has a clear, shareable URL
-
-**Goal:** Publish your work online and make it accessible to the world.
-
----
-
-## Deliverables
-
-1. A GitHub repository containing:
-
-   * Your complete project code, properly organized
-   * A `README.md` file explaining your project purpose, structure, and live URL
-2. A live deployed website (hosted via GitHub Pages, Netlify, or Vercel)
-
----
-
-## Outcome
-
-* Clarity and thoroughness of planning documentation
-* Proper use of HTML5, CSS, and JavaScript across multiple pages
-* Responsive and accessible design
-* Clean, well-organized, and commented code
-* Successful live deployment with a working link
-* Evidence of following best practices
+## Customization
+- Edit colors in `:root` within `css/style.css`. Primary blue is `--primary`, hover gold is `--accent`.
+- Replace images in `/images` with your own assets.
+- Update text content and links as needed.
