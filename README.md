@@ -1,5 +1,5 @@
 # MineTech Systems — Multipage Website (Final Project Starter)
-#YOU can click this link to view the lie site
+#YOU can click this link to view the live site
       https://68a0616d1c22b3f5e8789aea--minetechsystems.netlify.app/
 ## Pages
 - `index.html` — Home (hero, features, CTA)
